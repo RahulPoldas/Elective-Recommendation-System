@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="main-container">
+    <img src="https://img.freepik.com/free-vector/statistical-analysis-man-cartoon-character-with-magnifying-glass-analyzing-data-circular-diagram-with-colorful-segments-statistics-audit-research-concept-illustration_335657-2063.jpg?t=st=1734407754~exp=1734411354~hmac=b2971fb1445deaca84744aa83027529c3b2d5389921572dada75afe51e0f6148&w=740" alt="Logo" style="max-width: 150px; margin-bottom: 20px;">
+    <h1>Enter Roll Number (Index) for Recommendation</h1>
+    <form id="studentForm" method="POST" action="/recommend">
+      <label for="studentRollNo">Roll Number (Index):</label>
+      <input type="number" id="studentRollNo" name="roll_index" min="0" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="/static/index.js"></script>
+</body>
+</html>
