@@ -1,0 +1,79 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #01e1ed, #00418b);
+}
+
+/* Main Container */
+.main-container {
+  width: 100%;
+  max-width: 600px; /* Increased width */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+}
+
+/* Logo Image */
+.logo {
+  width: 150px; /* Adjusted size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+/* Input Fields */
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Radio Group Styling */
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.radio-group label {
+  margin-left: 5px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #022e5a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

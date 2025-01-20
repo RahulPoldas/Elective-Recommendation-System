@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="main-container">
+    
+    <h1>Student Information</h1>
+    <form id="studentForm" method="POST" action="/recommend">
+      <label for="studentRollNo">Roll Number (Index):</label>
+      <input type="number" id="studentRollNo" name="roll_index" min="0" required>
+
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" name="student_name" required>
+
+      <label for="ggpa">GGPA:</label>
+      <input type="number" id="ggpa" name="ggpa" step="0.01" min="0" max="10" required>
+
+      <label>Section:</label>
+      <div class="radio-group">
+        <input type="radio" id="cai1" name="section" value="CAI1" required>
+        <label for="cai1">CAI1</label>
+        <input type="radio" id="cai2" name="section" value="CAI2">
+        <label for="cai2">CAI2</label>
+        <input type="radio" id="cai3" name="section" value="CAI3">
+        <label for="cai3">CAI3</label>
+        <input type="radio" id="cai4" name="section" value="CAI4">
+        <label for="cai4">CAI4</label>
+      </div>
+
+      <label for="course">Select Course1:</label>
+      <select id="course" name="course" required>
+        <option value="Deep Learning">Deep Learning</option>
+        <option value="Reinforcement Learning">Reinforcement Learning</option>
+      </select>
+      <label for="course2">Select Course2:</label>
+      <select id="course2" name="course2" required>
+        <option value="Big Data Analytics">Big Data Analytics</option>
+        <option value="Big Data EcoSystem">Big Data EcoSystem</option>
+      </select>
+      <label for="course3">Select Course:</label>
+      <select id="course3" name="course3" required>
+        <option value="Applied DataScience">Applied DataScience</option>
+        <option value="MicroSoft Azure">Microsoft Azure</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="/static/index.js"></script>
+</body>
+</html>
